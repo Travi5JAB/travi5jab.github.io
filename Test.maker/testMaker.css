@@ -1,0 +1,20 @@
+#choosetxt{
+  text-align: center;
+}
+#likert{
+  text-align: center;
+}
+#QNum{
+  font-weight: 1000;
+  font-weight: bold;
+}
+#SubBtn{
+  text-align: center;
+  padding: 2em;
+}
+label{
+  font-weight: bold;
+}
+label[name="AnsNum"] {
+  font-size: 17pt
+}

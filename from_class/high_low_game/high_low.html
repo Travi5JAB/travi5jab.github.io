@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="high_low.css">
+    <link rel="stylesheet" href="../../Portfolio/portfolio-title.html">
+    <title>High Low Game</title>
+  </head>
+
+  <body>
+    <form action="../../Portfolio/apps-portfolio.html">
+      <input name="home" type="submit" value="Home" id="home" />
+    </form>
+    <h1>Guess The Number</h1>
+      <h3>  1 - 100 </h3>
+      <form id = "inputForm">
+          <input type="number" id="Text1" name="NumberInput"/>
+      </form>
+
+      <div id = "buttonDiv">
+        <button id="myBtn" type="submit" name="button" onClick="buttonPress();loseLife()"  accesskey="s" value="Make a Guess">Make a Guess</button>
+      </div>
+
+
+    <div>
+        <h4 id="life">Lives Left: 7</h4>
+        <h4 id="answer">Your Number is: </h4>
+    </div>
+     <script src="high_low.js"></script>
+  </body>
+
+
+</html>

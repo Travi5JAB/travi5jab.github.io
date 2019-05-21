@@ -1,0 +1,61 @@
+body {
+  background-color: lightblue;
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 20px 20px;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px 2px;
+  border-radius: 25px;
+}
+#btnForm{
+    text-align: center;
+}
+#buttonDiv{
+  text-align: center;
+}
+h1 {
+  color: #00004d;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Times;
+}
+h3 {
+  font-weight: bold;
+  font-family: Arial;
+  text-align: center;
+}
+h4 {
+  color: #00004d;
+  text-align: center;
+  font-family: Times;
+}
+#home{
+  background-color: black;
+  color: white;
+}
+html {
+  border-style: dotted;
+  border-width: thick;
+}
+input:focus{
+  border-color:#333;
+}
+#inputForm{
+  text-align: center;
+}
+#start_HLG{
+  background-color: black;
+  color: white;
+}
+#Text1{
+  background-color: lightblue;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: center
+}
