@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #aniLab{
   font-size: 16px;
   font-weight: bold;
@@ -285,3 +286,292 @@ html{
   z-index: 2;
   border-radius: 50% 70% 20% 70%;
 }
+=======
+#aniLab{
+  font-size: 16px;
+  font-weight: bold;
+}
+body{
+  background-color: #eeccff;
+  height:700px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: solid;
+  border-color: #ff66ff;
+}
+form{
+  text-align: center;
+}
+h1{
+  text-align: center;
+  padding: 3px;
+}
+h4{
+  text-align: center;
+  padding: 3px;
+}
+#homeForm{
+  text-align: left;
+}
+#home{
+  border-radius: 15%;
+  background-color: black;
+  color: white;
+}
+html{
+  background-color: white;
+}
+#t1div{
+  padding: 3px;
+}
+#t2div{
+  padding: 3px;
+}
+#numLab{
+  font-size: 16.25px;
+  font-weight: bold;
+}
+#subBtnDiv{
+  padding-top: 10px;
+  text-align: center;
+}
+#subBTN{
+  border-radius: 15%;
+  background-color: black;
+  color: white;
+}
+#Text1{
+  text-align: center;
+  padding: 2px;
+}
+#Text2{
+  padding: 2px;
+  text-align: center;
+}
+/* ///////////////////////////////////////////////////////////////////// */
+/* giraffe parts */
+
+.allTail{
+  position: absolute;
+  animation-name: tailswing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes tailswing {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-1deg);}
+  75% {transform: rotate(3deg);}
+  100% {transform: rotate(0deg);}
+}
+.body{
+  height: 80px;
+  width: 180px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 200px;
+  z-index: 2;
+  border-radius: 10% 10% 10% 10%;
+}
+.bodyspot1{
+  background-color: #b38600;
+  position: absolute;
+  height:30px;
+  width:40px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.bodyspot2{
+  background-color: #806000;
+  position: absolute;
+  height:20px;
+  width:15px;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.bodyspot3{
+  background-color: #806000;
+  position: absolute;
+  height:20px;
+  width:15px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.ears{
+  display:flex;
+  height:-60px;
+}
+.earL{
+  background-color: yellow;
+  height: 30px;
+  width: 15px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
+  transform: rotate(-15deg);
+  border-radius: 40% 50%
+}
+.earR{
+  background-color: yellow;
+  height: 30px;
+  width: 20px;
+  transform: rotate(15deg);
+  border-radius: 50% 40%;
+  margin-left: 35px;
+  margin-top: 8px;
+  position: absolute;
+}
+.earHoleL{
+  background-color: black;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+.eye{
+  background-color: black;
+  height: 8px;
+  width: 8px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  animation-name: eyeMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes eyeMove {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(5px);}
+  75% {transform: translateX(-1px);}
+  100% {transform: translateX(0);}
+}
+.eye:after {
+  position: absolute;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+  z-index: 2;
+}
+.eyeball{
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 23px;
+  margin-top: 5px;
+
+}
+.giraffeAll{
+  margin-left: 60px;
+  margin-top: 100px;
+  position: absolute;
+}
+.head{
+  height: 30px;
+  width:90px;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50% 50% 10% 10%;
+}
+.hornL{
+  height: 25px;
+  width: 8px;
+  background-color: brown;
+  margin-left: 8px;
+}
+.hornR{
+  top: -150px;
+  height: 25px;
+  width: 8px;
+  background-color: brown;
+  margin-left: 17px;
+
+  z-index: 1;
+}
+.neck{
+  height: 280px;
+  width: 40px;
+  background-color: yellow;
+  position: absolute;
+  margin-bottom: 100px;
+  border-radius: 20% 10% 10% 10%;
+}
+.neckspot1{
+  background-color: #b38600;
+  position: absolute;
+  height:15px;
+  width:20px;
+  margin-top: 45px;
+  margin-left: 20px;
+}
+.neckspot2{
+  background-color: #806000;
+  position: absolute;
+  height:50px;
+  width:10px;
+  margin-top: 90px;
+}
+.neckspot3{
+  background-color: #b38600;
+  position: absolute;
+  height:30px;
+  width:30px;
+  margin-top: 160px;
+}
+.legFL{
+  height: 120px;
+  width: 20px;
+  background-color: #b38600;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 30px;
+  z-index: 1;
+}
+.legFR{
+  height: 120px;
+  width: 20px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 250px;
+}
+.legBL{
+  height: 120px;
+  width: 20px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 120px;
+}
+.legBR{
+  height: 120px;
+  width: 20px;
+  background-color: #b38600;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 160px;
+  z-index: 1;
+}
+.tail{
+  background-color: yellow;
+  position: absolute;
+  height: 45px;
+  width: 10px;
+  margin-left: 185px;
+  margin-top: 200px;
+  transform: rotate(-30deg);
+  border-radius: 50% 50% 10% 10%;
+  z-index: 2
+}
+.tailBush{
+  background-color: brown;
+  height: 25px;
+  width: 25px;
+  margin-left: 195px;
+  margin-top: 240px;
+  z-index: 2;
+  border-radius: 50% 70% 20% 70%;
+}
+>>>>>>> 01ab586110c90cf72ac2081fa78254e17ec49b18

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 
 <html lang="en">
@@ -83,3 +84,90 @@
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
 </body>
 </html>
+=======
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="pluralAnimal.css">
+
+  <title>Animal Pluralizer</title>
+
+</head>
+<body class="bodydiv">
+    <div>
+      <form action="../../Portfolio/apps-portfolio.html" id="homeForm">
+        <input name="home" type="submit" value="Home" id="home" />
+      </form>
+    <h1>Animal Pluralizer</h1>
+    <div class="giraffeAll">
+      <div class="ears">
+        <div class="hornL"></div>
+        <div class="earL">
+          <div class="earHoleL"></div>
+        </div>
+        <div class="hornR"></div>
+        <div class="earR">
+          <div class="earHoleR"></div>
+        </div>
+      </div>
+      <div class="head">
+          <div class="eyeball">
+            <div class="eye"></div>
+          </div>
+      </div>
+      <div class="neck">
+        <div class="neckspot1"></div>
+        <div class="neckspot2"></div>
+        <div class="neckspot3"></div>
+      </div>
+      <div class="body">
+        <div class="bodyspot1"></div>
+        <div class="bodyspot2"></div>
+        <div class="bodyspot3"></div>
+      </div>
+      <div class="legFL"></div>
+      <div class="legFR"></div>
+      <div class="legBL"></div>
+      <div class="legBR"></div>
+      <div class= "allTail">
+        <div class="tail"></div>
+        <div class="tailBush"></div>
+      </div>
+    </div>
+    </div>
+    <form>
+        <div class="" id="t1div">
+          <label id="numLab">Enter a Number: </label> <input type="number" id="Text1" name="txtBoxNum"/>
+        </div>
+        <div class="" id="t2div">
+          <label id= "aniLab"> Enter an Animal: </label><input type="text" id="Text2"/>
+        </div>
+    </form>
+      <div class="" id="subBtnDiv">
+        <button type="submit" name="button" onClick="buttonPress()" id="subBTN">Submit</button>
+      </div>
+          <h4 id="answer"></h4>
+
+          <!-- <script type="text/javascript">
+              // not working to track eyeball movement please research more to figure out
+              $(".bodydiv").mousemove(function(event) {
+                var eye = $(".eye");
+                var x = (eye.offset().left) + (eye.width() / 2);
+                var y = (eye.offset().top) + (eye.height() / 2);
+                var rad = Math.atan2(event.pageX - x, event.pageY - y);
+                var rot = (rad * (180 / Math.PI) * -1) + 180;
+                eye.css({
+                  '-webkit-transform': 'rotate(' + rot + 'deg)',
+                  '-moz-transform': 'rotate(' + rot + 'deg)',
+                  '-ms-transform': 'rotate(' + rot + 'deg)',
+                  'transform': 'rotate(' + rot + 'deg)'
+                });
+              });
+          </script> -->
+    <script src="pluralAnimal.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
+</body>
+</html>
+>>>>>>> 01ab586110c90cf72ac2081fa78254e17ec49b18
