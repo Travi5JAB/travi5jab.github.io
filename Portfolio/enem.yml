@@ -1,0 +1,62 @@
+name:
+- Thief
+- Guard
+- Guard
+- Dragon
+- King
+- Troll
+health:
+- 10
+- 75
+- 75
+- 1000
+- 500
+- 350
+experience:
+- 5
+- 50
+- 50
+- 1000
+- 500
+- 200
+look:
+- "He will take your things and your life"
+- "He guards the west city at the south wall"
+- "He guards the west city at the east wall"
+- "A giant, flying, firebreathing lizard"
+- "The troll lives under the bridge and stops lost villagers"
+gold:
+- 5
+- 20
+- 20
+- 100000
+- 5000
+- 300
+damage:
+- 1
+- 5
+- 5
+- 35
+- 20
+- 10
+enemyimg:
+- "'/thief.jpg'"
+- "'/guard.jpg'"
+- "'/guard.jpg'"
+- 0
+- 0
+- "'/troll.jpg'"
+lvl:
+- 1
+- 4
+- 4
+- 10
+- 8
+- 6
+savedhealth:
+- 10
+- 75
+- 75
+- 1000
+- 500
+- 350
