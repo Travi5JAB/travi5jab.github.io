@@ -1,0 +1,70 @@
+html{
+    background-color: #0000b3
+}
+button{
+    height:112px;
+    width:50px;
+    background: url(./light-off-copy.jpg);
+
+}
+
+#lightbulbdiv{
+    height: 210px;
+    width: 150px;
+    background-color: grey;
+    border-color: black;
+    border-style: solid;
+    margin-left: 150px;
+    border-radius: 60% 60% 25% 25%;
+}
+#lightbulbbase{
+    height:100px;
+    width:100px;
+    margin-left: 172px;
+    background-color: #585858;;
+    border-color: black;
+    border-style: solid;
+}
+#buffer{
+    padding-top: 0px;
+}
+body{
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 500px;
+}
+#backUp{
+    z-index: -5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#wholebulb{
+    margin-top: 150px;
+    z-index: 1;
+}
+#bulbandglow{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#outerglow{
+    height:440px;
+    width:400px;
+    margin-left: 35px;
+    position: absolute;
+    z-index: 0;
+    opacity: .4;
+    border-radius: 50%;
+}
+#divCont{
+    height:340px;
+    width:300px;
+    margin-top: 80px;
+    margin-left: 75px;
+    position: absolute;
+    z-index: 0;
+    opacity: .65;
+    border-radius: 50%;
+}
