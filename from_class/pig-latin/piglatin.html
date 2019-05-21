@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="piglatin.css">
+        <link rel="html" href="../../Portfolio/portfolio-title.html">
+        <title>Pig Latin</title>
+    </head>
+    <body>
+      <form action="../../Portfolio/apps-portfolio.html" id="homeForm">
+        <input name="home" type="submit" value="Home" id="home" />
+      </form>
+        <h1>Pig Latin Translator</h1>
+            <div class="pig">
+              <div class="ears">
+                  <div class="earL">
+                    <div class="earHoleL"></div>
+                  </div>
+                  <div class="earR">
+                    <div class="earHoleR"></div>
+                  </div>
+              </div>
+              <div class="pighead">
+                <div class="eyeL">
+                  <div class="eyePupL">
+                  </div>
+                </div>
+                <div class="eyeR">
+                  <div class="eyePupR">
+                  </div>
+                </div>
+                <div class="nose">
+                  <div class="nostrilL"></div>
+                  <div class="nostrilR"></div>
+                </div>
+              </div>
+            </div>
+        <div id="inputArea">
+        <input type="text" id ="Text1" name="enterWord" value="Please Enter A Word" onfocus="this.value=''">
+
+            <button id = "tranBtn" type="button" name="button" onClick="finalPig()">Translate</button>
+        </div>
+        <div id ="divOut">
+            <h4 id = "output">Your Translation </h4>
+        </div>
+        <button type="button" name="button" onclick="dispRules()" id = "rulesBtn">Rules</button>
+        <script type="text/javascript" src= "piglatin.js">
+        </script>
+    </body>
+</html>

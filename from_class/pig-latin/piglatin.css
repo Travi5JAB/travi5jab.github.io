@@ -1,0 +1,196 @@
+body{
+border-width: 10px;
+border-style: double;
+border-color: grey;
+padding: 30px;
+background-color: #f2f2f2;
+margin:50px;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* animation for button */
+@keyframes PLTpinkflash {
+  0% {background-color: pink;}
+  50% {background-color: white;}
+  100% {background-color: pink;}
+}
+button{
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 15px;
+    width: 60px;
+     height: 20px;
+     position: relative;
+     animation-name: PLTpinkflash;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+/* /////////////////////////////////////////////////////////////// */
+#divOut{
+    text-align: center;
+    width:500px;
+    height:75px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.earL{
+  background-color: pink;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  border-radius: 80% 40%;
+  transform: rotate(-30deg);
+}
+.earR{
+  background-color: pink;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  margin-left: 170px;
+  border-radius: 40% 80%;
+  transform: rotate(30deg);
+}
+.earHoleL{
+  background-color: black;
+  position: absolute;
+  height: 80px;
+  width: 75px;
+  transform: rotate(-30deg);
+  border-radius: 80% 40%;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.earHoleR{
+  background-color: black;
+  position: absolute;
+  height: 80px;
+  width: 75px;
+  transform: rotate(30deg);
+  border-radius: 40% 80%;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.eyeL{
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  background-color: white;
+  margin-left: 60px;
+  margin-top: 50px;
+  border-radius: 30%;
+}
+.eyeR{
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  background-color: white;
+  margin-left: 160px;
+  margin-top: 50px;
+  border-radius: 30%;
+}
+.eyePupL{
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  position: absolute;
+  border-radius: 30%
+}
+.eyePupR{
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  position: absolute;
+    border-radius: 30%
+}
+h1{
+  text-align: center;
+  color: pink;
+  font-size: 80px;
+}
+h4{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#home{
+  text-align:left
+}
+html{
+background-color: white;
+}
+img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#inputArea{
+  text-align: center;
+  padding: 20px;
+}
+.nose{
+  position: absolute;
+  height: 100px;
+  width: 120px;
+  background-color: #ff80bf;
+  display: flex;
+  margin-left: 75px;
+  margin-top: 150px;
+  border-radius: 50%;
+}
+.nostrilL{
+  background-color: black;
+  height: 20px;
+  width: 15px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+.nostrilR{
+  background-color: black;
+  height: 20px;
+  width: 15px;
+  margin-left: 65px;
+  margin-top: 35px;
+  position: absolute;
+  border-radius: 50%;
+}
+/* ////////////////////////////////////////////////////// */
+/* pig hover animation */
+@keyframes pigshake {
+  0% {transform: rotate(0deg);}
+  25%{transform: rotate(5deg);}
+  50% {transform: rotate(0deg -5deg);}
+  75% {transform: rotate(5deg);}
+  100% {transform: rotate(0deg);}
+}
+.pig:hover{
+  animation-name: pigshake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* ////////////////////////////////////////////////// */
+.pighead{
+  height:300px;
+  width:300px;
+  background-color: pink;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  border-radius: 40%;
+  margin-top: 50px;
+}
+#rulesBtn{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 15px;
+}
+#tranBtn{
+    width: 75px;
+     height: 18px;
+}
