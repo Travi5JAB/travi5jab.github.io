@@ -10,6 +10,9 @@ body{
   padding:20px;
   color:white;
 }
+.navbar:hover{
+  background-color: rgba(37, 116, 169, 1);
+}
 .navDown{
   position: sticky;
   top:0;
