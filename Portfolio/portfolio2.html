@@ -10,6 +10,15 @@
       $(function(){
         $('#footer').load('footer.html');
       });
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 600) {
+          $(".landingPageNav").addClass("landingPageNavDown");
+        }else{
+          $(".landingPageNav").removeClass("landingPageNavDown");
+        }
+      });
     </script>
 </head>
 
