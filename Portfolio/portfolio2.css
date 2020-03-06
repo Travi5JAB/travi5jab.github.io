@@ -1,311 +1,157 @@
-html{
-  background-color: #eeeeee
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 800px) {
-.container{
-  justify-content: stretch;
-  display: grid;
-  grid-template-columns: 47% 30% 21% 2%;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-  "header header header ."
-  "main h1 h1 ."
-  "main body sidebar ."
-  "main body sidebar ."
-  "footer footer footer footer"
+
+
+/* header */
+.header{
+  margin: 0;
+  padding-left: 100px;
+  padding-top: 50px;
+  background-color: rgba(37, 116, 169, 1);
+  width:100%;
+  height: 600px;
+}
+  /* header title */
+  .header .title{
+    font-size: 45px;
+    padding-top: 30px;
+    color: white;
   }
+  .header p{
+    font-size: 20px;
+    margin-left: 60px;
+    color: white;
+  }
+/* header end */
+
+
+/* landingPage */
+.landingPage{
+  margin: 50px;
+  background-color: white;
+  border-radius: 10px;
 }
-@media (max-width: 800px) {
-  .container {
+  .landingPage .content{
+    padding-top: 10px;
+    margin: 25px;
+  }
+
+    /* aboutSection */
+    .landingPage .aboutSection{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 40% 50% 10%;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "picture aboutMe ."
+    }
+    /* aboutSection end */
+      /* aboutSection grid */
+      .aboutSection .profilePicture{
+        grid-area: picture;
+        text-align: center;
+      }
+        .profilePicture img{
+          width: 300px;
+          height: 300px;
+        }
+      .aboutSection .aboutMe{
+        grid-area: aboutMe;
+      }
+        .aboutMe p{
+          font-size: 25px;
+        }
+      /* aboutSection grid end*/
+
+    .languages{
+      margin-left: -25px;
+      margin-right: -25px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      padding: 30px;
+      background-color: #b0b0b0;
+      color: white;
+
+      display: grid;
+      grid-template-columns: 20% 40% 40%;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "languageHeader languageHeader languageHeader"
+      ". list1 list2";
+    }
+      .languages h1{
+        text-align: center;
+        font-size: 35px;
+        grid-area: languageHeader;
+      }
+      .languages ul{
+        font-size: 25px;
+      }
+      .languages .list1{
+        padding-left: 20%;
+        grid-area: list1;
+      }
+      .languages .list2{
+        grid-area: list2;
+      }
+
+  /* contentHeader */
+  .landingPage .content .contentHeader{
+    text-align: center;
+  }
+    .contentHeader h1{
+      font-size: 30px;
+    }
+
+  /* currentProjects */
+  .landingPage .content .currentProjects{
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "h1 h1 h1"
-    "main main sidebar"
-    "body body sidebar"
-    "footer footer footer"
+    "currentProjectsHeader currentProjectsHeader"
+    "project1 project2";
   }
-}
-.item-a{
-  grid-area: header;
-  background-color: #eeeeee;
-  margin-top: 60px;
-  padding-left: 25px;
-}
-.item-b{
-  grid-area: main;
-  padding-left: 25px;
-}
-.item-c{
-  grid-area: h1;
-  background-color: #004080;
-  text-align: center;
-  color: white;
+    /* grid areas */
+    .currentProjects .currentProjectsHeader{
+      grid-area: currentProjectsHeader;
+    }
+    .currentProjects .project1{
+      grid-area: project1;
+    }
+    .currentProjects .project2{
+      grid-area: project2;
+    }
+    /* grid areas end */
 
-}
-.item-d{
-  grid-area: body;
-  padding-left: 10px;
-  background-color: #c2c2c2;
-}
-.item-e{
-  grid-area: sidebar;
-  background-color: #c2c2c2;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+      .project1 p{
 
-}
-.item-f{
-  grid-area: footer;
-  background-color: black;
-  color: white;
-  padding-left: 25px;
-}
+      }
+      .project1 .frame{
+        text-align: center;
+      }
+        .project1 .frame a{
 
-.navbar{
-  background-color: grey;
-  position: fixed;
-  overflow: hidden;
-  height: 75px;
-  top: 0;
-  width: 100%;
-  opacity: 0.4;
-  padding:10px;
-}
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 25px;
-    display: inline-block;
-}
-.navbar:hover{
-  opacity: 1;
-  z-index: 5;
-}
-.bgslide{
-  background-color: black;
-  color: #fff;
-  font-size: 20px;
-  height: 200px;
-  width: 250px;
-  position: absolute;
-  z-index: -1;
-}
-.frame{
-  text-align: center;
-  z-index: 1;
-  margin-bottom: 20px;
-}
-.frame #slideinfo {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  font-size: 20px;
-  opacity: .65;
-  height: 200px;
-  width: 250px;
-  position: absolute;
-  z-index: 1;
+        }
+        .project1 .frame img{
+          height:250px;
+          width:250px;
+        }
+      .project2 p{
 
-}
-.frame:hover #slideinfo {
-  visibility: visible;
-}
-.img{
-  height: 200px;
-  width: 250px;
-  border: solid;
-  border-radius: 20%;
-  border:5px solid black;
-  margin: 5px;
-  z-index: 2;
-  margin-top: 15px;
-}
-.lead{
-  margin-bottom: 50px;
-}
-.slide-box{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #1a0000;
-}
-#slideinfo{
-  display: inline-block;
-}
-.slide-box{
-  z-index: -3;
-}
-.carousel-iso{
-  background-color: #1a0000;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "row1"
-    "row2"
-    "row3"
-    "row4"
-    "row5"
-    "row6"
-}
-.bufferdiv{
-  height:110px;
-  background-color: #1a0000;
-}
-#ico{
-  height: 25px;
-  width: 25px;
-}
-@media (min-width: 800px) {
-.billingcontainer{
-  justify-content: stretch;
-  display: grid;
-  grid-template-columns: 47% 30% 20% 3%;
-  grid-template-rows: auto 200px auto auto auto;
-  grid-template-areas:
-  "header2 header2 header2 ."
-  "main2 h2 h2 ."
-  "main2 body2 sidebar2 ."
-  "main2 body2 sidebar2 ."
-  "footer2 footer2 footer2 footer2"
-  }
-}
-@media (max-width: 800px) {
-  .billingcontainer {
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:
-    "header2 header2 header2"
-    "h2 h2 h2"
-    "main2 main2 sidebar2"
-    "body2 body2 sidebar2"
-    "footer2 footer2 footer2"
-  }
-}
-.item-a2{
-  grid-area: header2;
-  background-color: #eeeeee;
-  margin-top: 60px;
-  padding-left: 25px;
-}
-.item-billing{
-  grid-area: main2;
-  padding-left: 25px;
-  background-color: #eeeeee;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: auto ;
-  grid-template-areas:
-  "address payment"
-}
-.item-billing input{
-  margin-left: 5px;
-}
-.payment{
-  grid-area: payment;
-  background-color: #eeeeee;
-  margin-left: 5px;
-}
-.address{
-  grid-area: address;
-  background-color: #eeeeee;
-  margin-right:5px;
-}
-.item-c2{
-  grid-area: h2;
-  background-color: #004080;
-  color: white;
-  text-align: center;
-}
-.item-c2 h1{
-  margin-top: 25px;
-}
-.item-d2{
-  grid-area: body2;
-  background-color: #eeeeee;
-  padding-left: 20px;
-}
-.item-e2{
-  grid-area: sidebar2;
-  background-color: #eeeeee;
-  padding-left: 20px;
-  padding-top: 20px;
+      }
+      .project2 .frame{
+        text-align: center;
+      }
+        .project2 .frame a{
 
-}
-.item-f2{
-  grid-area: footer2;
-  background-color: black;
-  color: white;
-  padding-left: 25px;
-}
-#pbuff{
-  margin-left:5px;
-}
+        }
+        .project2 .frame img{
+          height:250px;
+          width:250px;
+        }
 
-
-
-/* ///////// */
-body {font-family: Arial, Helvetica, sans-serif;}
-html{background-color: #eeeeee}
-
-@media (min-width: 800px) {
-.item-d{
-   border-left: solid;
- }
-}
-@media (max-width: 800px) {
-.item-d{
-   border-top: solid;
- }
-}
-@media (min-width: 800px) {
-.item-c{
-    border-radius: 50px 15px 0px 0px;
-    border-left:solid;
-  }
-}
-@media (max-width: 800px) {
-.item-c{
-    border-radius: 50px 50px 0px 0px
-  }
-}
-
-@media (min-width: 800px) {
-.item-d2{
-   border-left: solid;
- }
-}
-@media (max-width: 800px) {
-.item-d2{
-   border-top: solid;
- }
-}
-@media (min-width: 800px) {
-.item-c2{
-    border-radius: 50px 15px 0px 0px;
-    border-left:solid;
-  }
-}
-@media (max-width: 800px) {
-.item-c2{
-    border-radius: 50px 50px 0px 0px
-  }
-}
-@media (min-width: 800px){
-#quickfix{
-    margin-left:40px;
-  }
-}
-@media (max-width: 800px) {
-.item-e2:before{
-    content:"";
-    position: absolute;
-    height:629px;
-    width:1px;
-    border-left: solid;
-  }
-}
+/* landingPage end */

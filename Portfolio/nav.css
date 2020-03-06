@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* nav area */
+.navbar{
+  height: 80px;
+  width:100%;
+  padding:20px;
+  background-color: rgba(37, 116, 169, 1);
+  color:white;
+}
+.navbar:hover{
+  background-color: rgba(37, 116, 169, 1);
+}
+.navDown{
+  position: sticky;
+  top:0;
+  background-color: rgba(37, 116, 169, .5);
+}
+  .navbar nav{
+    padding-top: 20px;
+  }
+
+  .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  .navbar a:hover{
+    color: black;
+    text-decoration: underline;
+  }
+/* nav end */
