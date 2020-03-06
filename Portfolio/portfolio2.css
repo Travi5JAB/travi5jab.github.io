@@ -4,7 +4,11 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
+.landingPageNavDown{
+  position: sticky;
+  top:0;
+  background-color: rgba(37, 116, 169, .5);
+}
 /* header */
 .header{
   margin: 0;
@@ -33,6 +37,7 @@ body{
   margin: 50px;
   background-color: white;
   border-radius: 10px;
+  padding-bottom: 20px;
 }
   .landingPage .content{
     padding-top: 10px;
