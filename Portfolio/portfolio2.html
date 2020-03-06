@@ -2,35 +2,37 @@
     <link rel="stylesheet" href="portfolio2.css">
     <link rel="stylesheet" href="bootstrap.css">
     <title>Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('#nav').load('nav.html');
+      });
+    </script>
 </head>
-<div class = "navbar">
-  <nav>
-    <a href="#">Home</a>
-    <a id="aboutmebtn" href="aboutMe.html">About</a>
-    <a href="apps-portfolio.html">Apps</a>
-    <a href="#">Services</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="donation_page.html">Donate</a>
-  </nav>
+
+<div id="nav">
 </div>
 
 <section class = "container">
 
+
   <div class = "item-a">
     <div class="bootstrap-iso">
-    <div class="jumbotron">
-        <h1 class="display-4">PORTFOLIO:</h1>
-        <p class="lead">Welcome to my portfolio page!</p>
-    </div>
+      <div class="jumbotron">
+          <h1 class="display-4">PORTFOLIO:</h1>
+          <p class="lead">Welcome to my portfolio page!</p>
+      </div>
     </div>
   </div>
 
-<div class = "item-b">
-  <h1>Please Check Back For New Apps and App Updates Weekly</h1>
-</div>
+  <div class = "item-b">
+    <h1>Please Check Back For New Apps and App Updates Weekly</h1>
+  </div>
+
   <div class = "item-c">
     <h1>Things to Check Out</h1>
   </div>
+
   <div class = "item-d">
     <h2>Current Projects</h2>
     <h4>Cloud Culture</h4>
@@ -39,8 +41,8 @@
     <p>Skill Tree is a Social Media Webpage to connent Developers and Mentors together</p>
     <br/>
     <h4>These are the projects that we are currently working on. Please check them out!!!</h4>
-
   </div>
+
   <div class = "item-e" style ="background-color: grey">
     <h4>Featured Apps</h4>
     <p>Cloud Culture:</p>
@@ -56,7 +58,6 @@
       <img src="../sources/Zeallogo.png" alt="First slide" class = "img">
     </div>
   </div>
-
 
   <div class = "item-f">
     <p>&copy 2019 Travis Baker</p>
