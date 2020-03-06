@@ -7,8 +7,15 @@ body{
 .landingPageNavDown{
   position: sticky;
   top:0;
-  background-color: rgba(37, 116, 169, .5);
+  background-color: rgba(37, 116, 169, .5) !important;
 }
+.landingPageNav{
+  background-color: rgba(37, 116, 169, 1);
+}
+.landingPageNavDown:hover{
+  background-color: rgba(37, 116, 169, 1);
+}
+
 /* header */
 .header{
   margin: 0;
