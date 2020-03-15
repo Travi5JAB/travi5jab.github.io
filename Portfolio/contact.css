@@ -1,0 +1,225 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* navbar */
+.conatctPageNav{
+
+}
+/* navbar end */
+
+/* header */
+.header{
+  margin: 0;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: rgba(37, 116, 169, 1);
+  width:100%;
+  color: white;
+}
+  .header h1{
+    font-size: 45px;
+  }
+  .header p{
+    font-size: 20px;
+    margin-left: 60px;
+  }
+/* header end */
+
+/* content */
+.content{
+  margin: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 8px black, 10px 10px 8px rgba(0, 0, 0, 0.5), 15px 15px 8px rgba(0,0,0,0.3);
+}
+  /* contentHeader */
+  .contentHeader{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(37, 116, 169, 1);
+  }
+    .contentHeader h1{
+      font-size: 35px;
+    }
+    .contentHeader h3{
+      font-size: 20px;
+    }
+  /* contentHeader end */
+
+  /* contactFormSection */
+  .contactFormSection{
+    margin: 20px;
+  }
+    .contactFormSection h1{
+
+    }
+    /* containers */
+    .contactFormSection .containers{
+      margin-left: 50px;
+    }
+    .contactFormSection .containers form{
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-rows: 350px 50px;
+      grid-template-areas:
+      ". left right right"
+      ". submit submit .";
+    }
+    .containers.left{
+      grid-area: left;
+      margin-left: 50px;
+    }
+      .containers .left .row1{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-auto-rows: 50px;
+        grid-template-areas: "label1 input1";
+      }
+        .row1 label{
+          grid-area: label1;
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        .row1 input{
+          grid-area: input1;
+          width: 300px;
+          height: 30px;
+        }
+      .containers .left .row2{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-auto-rows: 50px;
+        grid-template-areas: "label2 input2";
+      }
+        .row2 label{
+          grid-area: label2;
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        .row2 input{
+          grid-area: input2;
+          width: 300px;
+          height: 30px;
+        }
+      .containers .left .row3{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-auto-rows: 50px;
+        grid-template-areas: "label3 input3";
+      }
+        .row3 label{
+          grid-area: label3;
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        .row3 input{
+          grid-area: input3;
+          width: 300px;
+          height: 30px;
+        }
+      .containers .left .row4{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-auto-rows: 50px;
+        grid-template-areas: "label4 input4";
+      }
+        .row4 label{
+          grid-area: label4;
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        .row4 select{
+          grid-area: input4;
+          width: 300px;
+          margin-top: 5px;
+          text-align-last: center;
+        }
+          .row4 select option{
+            padding-left: 20px;
+          }
+        /* end left */
+    .containers .right{
+      grid-area: right;
+
+    }
+      .containers .right .subject{
+        font-size: 20px;
+      }
+      .containers .right .row5{
+
+      }
+        .row5 textarea{
+          height: 250px;
+          width: 600px;
+          font-size: 20px;
+        }
+        /* end right */
+    .submit{
+      text-align: center;
+      grid-area: submit;
+      width: 100%;
+      background-color: rgba(37, 116, 169, 1);
+      border-radius: 50px;
+      color: white;
+      font-size: 30px;
+      margin-left: -50px;
+    }
+      .submit:hover{
+        transform: translateY(5px);
+        background-color: rgba(29, 94, 138, 1);
+      }
+      .submit:focus{
+        outline: none;
+      }
+    /* containers end */
+
+  /* contactFormSection end */
+
+  .moreInfo{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 5% 65% 10% 15% 5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    " . main . picture .";
+  }
+    .moreInfo .main{
+      grid-area: main;
+    }
+      .moreInfo h1{
+        font-size: 35px;
+        margin-left: -20px;
+      }
+      .moreInfo .main #info{
+        font-size: 20px;
+      }
+        #info a{
+          text-decoration: none;
+          color: rgba(37, 116, 169, 1);
+        }
+        #info a:hover{
+          text-decoration: underline;
+          color: rgba(29, 94, 138, 1);;
+        }
+      .moreInfo .main #small{
+        font-size: 15px;
+        font-weight: bold;
+      }
+    .moreInfo .profilePic{
+      grid-area: picture;
+    }
+      .profilePic img{
+        border-radius: 100px;
+      }
