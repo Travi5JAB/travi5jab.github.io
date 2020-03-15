@@ -7,13 +7,21 @@
         $('#nav').load('nav.html');
       });
       $(function(){
-        $('footer').load('footer.html');
+        $('#footer').load('footer.html');
+      });
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 600) {
+          $(".contactPageNav").addClass("contactPageNavDown");
+        }else{
+          $(".contactPageNav").removeClass("contactPageNavDown");
+        }
       });
     </script>
 </head>
 
 
-<div class= "conatctPageNav" id="nav">
+<div class= "contactPageNav" id="nav">
 </div>
 
 <div class="header" >
