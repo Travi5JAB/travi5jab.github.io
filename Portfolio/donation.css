@@ -1,0 +1,365 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* navbar */
+.landingPageNavDown{
+  position: sticky;
+  top:0;
+  background-color: rgba(37, 116, 169, .5) !important;
+}
+.landingPageNav{
+  background-color: rgba(37, 116, 169, 1);
+}
+.landingPageNavDown:hover{
+  background-color: rgba(37, 116, 169, 1);
+  box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
+}
+/* navbar end */
+
+/* header */
+.header{
+  margin: 0;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: rgba(37, 116, 169, 1);
+  width:100%;
+}
+  /* header title */
+  .header .title{
+    font-size: 45px;
+    padding-top: 30px;
+    color: white;
+  }
+  .header p{
+    font-size: 20px;
+    margin-left: 60px;
+    color: white;
+  }
+/* end header */
+
+/* content  */
+.content{
+  margin: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 8px black, 10px 10px 8px rgba(0, 0, 0, 0.5), 15px 15px 8px rgba(0,0,0,0.3);
+}
+  /* form */
+  .content .billingForm{
+    margin: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "address payment"
+    "subBtn subBtn"
+    "total total";
+  }
+    /* address */
+    .billingForm .address{
+      grid-area: address;
+      display: grid;
+      grid-template-columns: 45% 5% 5% 45%;
+      grid-template-rows: 80px 60px 60px 60px;
+      grid-template-areas:
+      "h3 h3 h3 h3"
+      "name name email email"
+      "address address address address"
+      "city state state zip";
+    }
+      .address h3{
+        font-size: 25px;
+        grid-area: h3;
+      }
+      .address .fullName{
+        grid-area: name;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelFullName inputFullName";
+      }
+        .fullName label{
+          grid-area: labelFullName;
+
+        }
+        .fullName input{
+          grid-area: inputFullName;
+          height: 25px;
+          width: 90%;
+        }
+      .address .email{
+        grid-area: email;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelEmail inputEmail";
+      }
+        .email label{
+          grid-area: labelEmail;
+
+        }
+        .email input{
+          grid-area: inputEmail;
+          height: 25px;
+          width: 90%;
+        }
+      .address .addressMain{
+        grid-area: address;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelAddressMain inputAddressMain";
+      }
+        .addressMain label{
+          grid-area: labelAddressMain;
+        }
+        .addressMain input{
+          grid-area: inputAddressMain;
+          height: 25px;
+          width: 90%;
+        }
+      .address .city{
+        grid-area: city;
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelCity inputCity";
+      }
+        .city label{
+          grid-area: labelCity;
+        }
+        .city input{
+          grid-area: inputCity;
+          height: 25px;
+          width: 90%;
+        }
+      .address .state{
+        grid-area: state;
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelState inputState";
+      }
+        .state label{
+          grid-area: labelState;
+        }
+        .state input{
+          grid-area: inputState;
+          height: 25px;
+          width: 90%;
+        }
+      .address .zip{
+        grid-area: zip;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelZip inputZip";
+      }
+        .zip label{
+          grid-area: labelZip;
+          margin-left: 50px;
+        }
+        .zip input{
+          grid-area: inputZip;
+          height: 25px;
+          width: 90%;
+        }
+    /* end address */
+
+    /* payement */
+    .billingForm .payment{
+      grid-area: payment;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 60px 40px 40px 40px 40px 40px 40px;
+      grid-template-areas:
+      "h3 h3"
+      "icons icons"
+      "nameOnCard nameOnCard"
+      "ccNumber ccNumber"
+      "expMonth expYear"
+      "cvv cvv"
+      "checkbox checkbox";
+    }
+      .payment h3{
+        grid-area: h3;
+        font-size: 25px;
+      }
+      .payment .icon-container{
+        grid-area: icons;
+      }
+      .payment .nameOnCard{
+        grid-area: nameOnCard;
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelNoC inputNoC";
+      }
+        /* NoC inside */
+        .nameOnCard label{
+          grid-area: labelNoC;
+        }
+        .nameOnCard input{
+          grid-area: inputNoC;
+          height: 25px;
+          width: 90%;
+        }
+        /* end NoC */
+      .payment .ccNumber{
+        grid-area: ccNumber;
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelccNum inputccNum";
+      }
+        /* ccNum inside */
+        .ccNumber label{
+          grid-area: labelccNum;
+        }
+        .ccNumber input{
+          grid-area: inputccNum;
+          height: 25px;
+          width: 90%;
+        }
+        /* end ccNum  */
+      .payment .expMonth{
+        grid-area: expMonth;
+        display: grid;
+        grid-template-columns: 90px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelExpMonth inputExpMonth";
+      }
+        /* expMonth inside */
+        .expMonth label{
+          grid-area: labelExpMonth;
+        }
+        .expMonth input{
+          grid-area: inputExpMonth;
+          height: 25px;
+          width: 25%;
+        }
+        /* end expMonth */
+      .payment .expYear{
+        grid-area: expYear;
+        display: grid;
+        grid-template-columns: 75px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelExpYear inputExpYear";
+      }
+        /* expYear inside */
+        .expYear label{
+          grid-area: labelExpYear;
+        }
+        .expYear input{
+          grid-area: inputExpYear;
+          height: 25px;
+          width: 25%;
+        }
+        /* end expYear */
+      .payment .cvvNumber{
+        grid-area: cvv;
+        display: grid;
+        grid-template-columns: 75px auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "labelCvvNumber inputCvvNumber";
+      }
+        /* cvvNumber inside */
+        .cvvNumber label{
+          grid-area: labelCvvNumber;
+        }
+        .cvvNumber input{
+          grid-area: inputCvvNumber;
+          height: 25px;
+          width: 10%;
+        }
+        /* end cvvNumber */
+      .payment .checkbox{
+        grid-area: checkbox;
+      }
+    /* end payment */
+
+    /* subBtn start */
+    .subBtn{
+      grid-area: subBtn;
+      height: 40px;
+      width: 80%;
+      margin-left: 10%;
+      text-align: center;
+      background-color: rgba(37, 116, 169, 1);
+      border-radius: 50px;
+      color: white;
+      font-size: 30px;
+    }
+    .subBtn:hover{
+      transform: translateY(5px);
+      background-color: rgba(29, 94, 138, 1);
+    }
+    /* end subBtn */
+
+    /* total */
+    .billingForm .cartTotal{
+      grid-area: total;
+    }
+    /* end total */
+  /* end form */
+
+/* aboutAll */
+.aboutAll{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "about about"
+  "sub pic"
+}
+  /* aboutDonations */
+  .aboutDonations{
+    grid-area: about;
+    margin: 10px;
+    padding-top: 20px;
+  }
+  /* end aboutDonations */
+
+  /* aboutDonationsSub */
+  .aboutDonationsSub{
+    grid-area: sub;
+    margin: 10px;
+    padding-top: 20px;
+  }
+    .aboutDonationsSub p{
+      padding-left: 10px;
+    }
+  /* end aboutDonationsSub */
+
+  /* profilePic */
+  .profilePic{
+    grid-area: pic;
+    margin: 10px;
+    padding-top: 20px;
+  }
+    .profilePic img{
+      border-radius: 100px;
+    }
+  /* end profilePic */
+/* end aboutAll */
+
+/* end content */
+
+
+/* footer */
