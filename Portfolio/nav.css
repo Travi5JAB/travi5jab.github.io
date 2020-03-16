@@ -9,6 +9,7 @@ body{
   width:100%;
   padding:20px;
   color:white;
+  z-index: 99;
 }
 .navbar:hover{
   background-color: rgba(37, 116, 169, 1);
