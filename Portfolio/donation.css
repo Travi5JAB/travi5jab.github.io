@@ -4,15 +4,15 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
 }
 /* navbar */
-.landingPageNavDown{
+.donationPageNavDown{
   position: sticky;
   top:0;
   background-color: rgba(37, 116, 169, .5) !important;
 }
-.landingPageNav{
+.donationPageNav{
   background-color: rgba(37, 116, 169, 1);
 }
-.landingPageNavDown:hover{
+.donationPageNavDown:hover{
   background-color: rgba(37, 116, 169, 1);
   box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
 }
