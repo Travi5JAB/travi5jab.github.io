@@ -23,6 +23,10 @@ body{
   background-color: rgba(37, 116, 169, 1) !important;
   box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
 }
+
+.landingPageNavUp{
+  display: none;
+}
 /* navbar end */
 
 /* header */

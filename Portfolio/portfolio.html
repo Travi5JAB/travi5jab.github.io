@@ -20,12 +20,20 @@
       });
 
       $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 600) {
-          $(".landingPageNav").addClass("landingPageNavDown");
-        }else{
-          $(".landingPageNav").removeClass("landingPageNavDown");
-        }
+        var scrollTop =  0;
+        $(window).scroll(function(event){
+          var scroll = $(this).scrollTop();
+          if (scroll <= scrollTop && scroll >= 600) {
+            $(".landingPageNav").addClass("landingPageNavUp");
+          }else if (scroll >=600 && scrollTop != 0){
+            $(".landingPageNav").removeClass("landingPageNavUp");
+            $(".landingPageNav").addClass("landingPageNavDown");
+          }else if (scrollTop != 0){
+            $(".landingPageNav").removeClass("landingPageNavDown");
+            $(".landingPageNav").removeClass("landingPageNavUp");
+          }
+          scrollTop = scroll
+        });
       });
     </script>
 </head>
