@@ -10,14 +10,20 @@ body{
   padding:20px;
   color:white;
   z-index: 99;
+  background-image: url('../sources/ocean_sea_foam.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-.navbar:hover{
-  background-color: rgba(37, 116, 169, 1);
+.navDown:hover{
+  background-color: rgba(37, 116, 169, 1) !important;
+  box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
 }
 .navDown{
   position: sticky;
   top:0;
-  background-color: rgba(37, 116, 169, .5);
+  background-color: rgba(37, 116, 169, .5) !important;
+  background-image: none;
 }
   .navbar nav{
     padding-top: 20px;

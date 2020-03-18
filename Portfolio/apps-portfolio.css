@@ -1,19 +1,24 @@
 body{
   margin: 0;
   padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* navbar */
 .appsPageNavDown{
   position: sticky;
   top:0;
   background-color: rgba(37, 116, 169, .5) !important;
+  background-image: none;
 }
 .appsPageNav{
   background-color: rgba(37, 116, 169, 1);
+  background-image: url('../sources/ocean_sea_foam.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .appsPageNavDown:hover{
-  background-color: rgba(37, 116, 169, 1);
+  background-color: rgba(37, 116, 169, 1) !important;
   box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
 }
 /* end navbar */

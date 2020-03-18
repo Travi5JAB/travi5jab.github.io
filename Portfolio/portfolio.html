@@ -1,6 +1,14 @@
 <head>
     <link rel="stylesheet" href="portfolio.css">
     <title>Home Page</title>
+
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
       $(function(){
@@ -22,6 +30,7 @@
     </script>
 </head>
 
+
 <body>
 
 <div id="nav" class= "landingPageNav">
@@ -32,6 +41,171 @@
   <p>Welcome to my page!</p>
   <p>This page is here to link to project that i am working on and have worked on in the past</p>
 </div>
+
+<!-- carousel -->
+<div class="container">
+  <h1>Check out some of our Apps and Webpages</h1>
+  <hr>
+  <div class="row">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-none d-lg-block">
+            <div class="slide-box">
+              <div class="frame" id="firstframe">
+                <div class="bgslide">
+                  <a href="../from_class/pig-latin/piglatin.html" target="_blank">
+                    <p id = "slideinfo">Pig Latin Translater:  Translate word or phrase into pig latin. Animation on Pig head made with CSS. Uses javascript for logic and html to display </p>
+                  </a>
+                </div>
+                <img id="firstframe" src="../sources/pig.png" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="../from_class/high_low_game/high_low.html" target="_blank">
+                    <p id = "slideinfo">High Low Game:  Guess a number between 1-100 in 7 guesses or less.  Animation on 8 Ball made with CSS. Uses javascript for logic and html to display</p>
+                  </a>
+                </div>
+                <img src="../sources/highlow.png" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="../from_class/plural/pluralAnimal.html" target="_blank">
+                    <p id = "slideinfo">Pluralizer: Display plural or singular version of animals.  Uses javascript for logic and html to display</p>
+                  </a>
+                </div>
+                <img src="../sources/pluralizer.png" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="../from_class/8ball/8ball.html">
+                    <p id = "slideinfo">8 Ball: Ask A question and shake the ball.  Uses javascript for logic and html to display</p>
+                  </a>
+                </div>
+                <img src="../sources/eightball.png" alt="First slide" class = "img">
+              </div>
+            </div> <!-- end slide-box-->
+          </div> <!-- end d-none -->
+        </div>  <!-- end carousel-item -->
+
+        <div class="carousel-item">
+          <div class="d-none d-lg-block">
+            <div class="slide-box">
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="https://serene-caverns-71942.herokuapp.com/">
+                    <p id = "slideinfo">
+                      Dice Roll: roll a dice and log the outcome. Uses react app.
+                    </p>
+                  </a>
+                </div>
+                <img src="http://travi5jab.github.io/sources/dice.PNG" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="https://shrouded-sea-28469.herokuapp.com/">
+                    <p id = "slideinfo">
+                      Cloud Cultue: Social platform for Developers to connect
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/cloud.jpg" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="https://secure-plains-82081.herokuapp.com/">
+                    <p id = "slideinfo">
+                      Skill Tree: Social platform to connect Developers and Mentors
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/Zeallogo.png" alt="First slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="http://kingspiremarketing.com/">
+                    <p id = "slideinfo">
+                      KingSpire Media: A digital marketing and managment website
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/kingspiremedia.png" alt="First slide" class = "img">
+              </div>
+            </div> <!-- end slide-box -->
+          </div> <!-- end d-none  -->
+        </div>  <!-- end carousel-item -->
+
+        <div class="carousel-item">
+          <div class="d-none d-lg-block">
+            <div class="slide-box">
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="https://joelsclinic.com/">
+                    <p id = "slideinfo">
+                      Joels Clinic: A message theropist website. Set up an appointment and pay online.
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/joelsclinic.png" alt="Second slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="https://collisiontech-inc.com/">
+                    <p id = "slideinfo">
+                      Collision Tech: A web for a local collision repair business
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/collisiontech.png" alt="Second slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="http://yourpayrollman.com/">
+                    <p id = "slideinfo">
+                      Your PayRoll Man: a webpage for workers comp and HR issues to be resolved. Connections to ADP
+                    </p>
+                  </a>
+                </div>
+                <img src="../sources/yourpayrollman.png" alt="Second slide" class = "img">
+              </div>
+
+              <div class="frame">
+                <div class="bgslide">
+                  <a href="">
+                    <p id = "slideinfo">Sample Text</p>
+                  </a>
+                </div>
+                <img src="https://picsum.photos/285/200/?image=4&random" alt="Second slide" class = "img">
+              </div>
+            </div> <!-- end slide-box -->
+          </div> <!-- end d-none  -->
+        </div>  <!-- end carousel-item -->
+      </div>  <!-- end carousel-inner -->
+      <a id="prev" class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span id="prev-btn" class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span id="prev-btn" class="sr-only">Previous</span>
+      </a>
+      <a  id="next" class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span id="next-btn"class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span id="next-btn"class="sr-only">Next</span>
+      </a>
+    </div> <!-- end carousel -->
+  </div>  <!-- end row -->
+</div>  <!-- end container -->
+
+<!-- end  carousel -->
 
 <section class = "landingPage">
   <div class="content">
