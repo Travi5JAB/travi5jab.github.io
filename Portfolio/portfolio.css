@@ -9,6 +9,8 @@ body{
   top:0;
   background-color: rgba(37, 116, 169, .5) !important;
   background-image: none !important;
+  z-index: 999;
+  padding-bottom: 25px;
 }
 .landingPageNav{
   background-color: rgba(37, 116, 169, 1);
