@@ -8,7 +8,7 @@ body{
   position: sticky;
   top:0;
   background-color: rgba(37, 116, 169, .5) !important;
-  background-image: none;
+  background-image: none !important;
 }
 .landingPageNav{
   background-color: rgba(37, 116, 169, 1);
