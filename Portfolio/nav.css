@@ -10,10 +10,10 @@ body{
   padding:20px;
   color:white;
   z-index: 99;
-  background-image: url('../sources/ocean_sea_foam.jpg');
+  /* background-image: url('../sources/ocean_sea_foam.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
 }
 .navDown:hover{
   background-color: rgba(37, 116, 169, 1) !important;
