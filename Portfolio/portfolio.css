@@ -200,7 +200,7 @@ body{
   .container .row{
   }
     .row .carousel{
-      margin-left: 160px;
+      margin-left: 155px;
     }
       .carousel ol{
 
@@ -253,6 +253,7 @@ body{
       #prev{
         margin-left: -150px;
         color:black;
+        border-radius: 0 150px 150px 0;
       }
       #prev:hover{
         background-color: rgba(0,0,0,.5);
@@ -266,6 +267,7 @@ body{
       #next{
         margin-right: -150px;
         color:black;
+        border-radius: 150px 0 0 150px;
       }
       #next:hover{
         background-color: rgba(0,0,0,.5);
