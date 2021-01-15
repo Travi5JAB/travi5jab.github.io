@@ -1,30 +1,16 @@
 <head>
     <link rel="stylesheet" href="contact.css">
-    <title>Contact Us Page</title>
+    <title>Contact Us Page - Travis Baker Web Development and Managment</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-      $(function(){
-        $('#nav').load('nav.html');
-      });
-      $(function(){
-        $('#footer').load('footer.html');
-      });
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 600) {
-          $(".contactPageNav").addClass("contactPageNavDown");
-        }else{
-          $(".contactPageNav").removeClass("contactPageNavDown");
-        }
-      });
+    <script
+      src="JS/navScroll.js">
     </script>
 </head>
 
+<!-- render navbar -->
+<iframe class="contactPageNav" id="nav" src="nav.html"></iframe>
 
-<div class= "contactPageNav" id="nav">
-</div>
-
-<div class="header" >
+<div class="header">
   <h1>
     Contact Us
   </h1>
@@ -44,7 +30,7 @@
     <h1>Fill out your information here</h1>
 
     <div class="containers">
-      <form action="mailto:travis841235@gmail.com" method="post" enctype="text/plain" target="_blank">
+      <form action="mailto:travisbakercoding@gmail.com" method="post" enctype="text/plain" target="_blank">
         <div class="left">
           <div class="row1">
             <label for="fname">First Name</label>
@@ -96,8 +82,9 @@
       <h1>More Info</h1>
       <p id="info">
         We would love to create an app or webpage for you!
-        Before you contact us please check out the about page to
-        learn more about what we are all about and the
+        Before you contact us please check out the
+        <a href="portfolio.html#about">about section</a>
+        to learn more about what we are all about and the
         <a href = "apps-portfolio.html">
           Projects Page</a>
         to check out previous apps we have made in the past.
@@ -112,5 +99,5 @@
 
 </div> <!-- end content -->
 
-<div class = "contactPageFooter" id="footer">
-</div>
+<!-- render footer.html -->
+<iframe class="landingPageFooter" id="footer" src="footer.html"></iframe>

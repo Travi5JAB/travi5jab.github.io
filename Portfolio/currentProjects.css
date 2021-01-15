@@ -1,0 +1,49 @@
+.contentHeader{
+  text-align: center;
+}
+.currentProjects{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 400px;
+  grid-template-areas:
+  "currentProjectsHeader currentProjectsHeader"
+  "project1 project2";
+}
+  .currentProjects .currentProjectsHeader{
+    grid-area: currentProjectsHeader;
+  }
+  .currentProjects .project1{
+    grid-area: project1;
+  }
+    #project{
+      text-align: center;
+    }
+    #project .frame{
+      text-align: center;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 300px 50px;
+      grid-template-areas:
+      "img"
+      "p";
+    }
+      #project .frame a{
+        grid-area: img;
+      }
+        .project1 img{
+          height: 250px;
+          width: 250px;
+        }
+      #project .frame p{
+        grid-area: p;
+      }
+  .currentProjects .project2{
+    grid-area: project2;
+  }
+    .project2 .frame{
+      text-align: center;
+    }
+      .project2 img{
+        height: 250px;
+        width: 250px;
+      }

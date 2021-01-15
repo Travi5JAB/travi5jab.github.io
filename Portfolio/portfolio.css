@@ -1,16 +1,116 @@
-body{
+html, body{
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: #c9c9c9;
+  width: 100%;
 }
-/* navbar */
-.landingPageNavDown{
-  position: sticky;
-  top:0;
-  background-color: rgba(37, 116, 169, .5) !important;
-  background-image: none !important;
-  z-index: 999;
-  padding-bottom: 25px;
+iframe{
+  width: 100%;
+  height: auto;
+  border: none;
+}
+button:focus{
+  outline: none;
+}
+
+
+  /* header */
+  .header{
+    margin: 0;
+    padding-top: 200px;
+    background-color: rgba(37, 116, 169, 1);
+    background-image: url(../sources/ocean_sea_foam.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /* container */
+  .container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+    .container .about{
+    }
+    .container .about iframe{
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3), 10px 10px 8px rgba(0, 0, 0, 0.3), 15px 15px 8px rgba(0, 0, 0, 0.3);
+      height: 800px;
+    }
+    .container .apps{
+      background-color: #3e67ab;
+      text-align: center;
+      padding-top: 20px;
+    }
+      .container .apps h1{
+        color: white;
+      }
+      .container .apps .row{
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 34% 34% 28.5% 3.5%;
+        grid-template-rows: 25px 550px 25px;
+        grid-template-areas:
+        ". . . ."
+        "back iframe . fwd"
+        ". . . .  ";
+      }
+      .row button{
+        font-size: 50px;
+        color: rgba(255,255,255,.3);
+        background-color: rgba(0,0,0,.3);
+        height: 425px;
+        width: 50px;
+        border: none;
+
+      }
+        .row button:hover{
+          background-color: rgba(0, 0, 0, 0.6);
+          color: rgba(255,255,255,.6  );
+        }
+        .row .backBtn{
+          grid-area: back;
+          border-radius:  0 100px 100px 0;
+        }
+        .rox .space{
+          grid-area: space;
+        }
+        .row .forwardBtn{
+          grid-area: fwd;
+          border-radius: 100px 0 0 100px;
+        }
+      .row iframe{
+        grid-area: iframe;
+        width: 100%;
+        height: 420px;
+        /* overflow: hidden; */
+      }
+
+    .projects{
+      margin-top: 50px;
+    }
+      .projects iframe{
+        height: 600px;
+      }
+
+
+
+/* footer and nav  */
+iframe{
+  width: 100%;
+  border: none;
+}
+
+#footer{
+  bottom: 0;
+}
+#nav{
+  height: 100px;
 }
 .landingPageNav{
   background-color: rgba(37, 116, 169, 1);
@@ -19,264 +119,64 @@ body{
   background-attachment: fixed;
   background-position: center;
 }
-.landingPageNavDown:hover{
-  background-color: rgba(37, 116, 169, 1) !important;
-  box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
+/* scroll down */
+.landingPageNavDown{
+  position: sticky;
+  top:0;
+  background-color: rgba(37, 116, 169, .5) !important;
+  background-image: none !important;
+  z-index: 999;
+  padding-bottom: 25px;
 }
+  .landingPageNavDown:hover{
+    background-color: rgba(37, 116, 169, 1) !important;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, .5), 10px 10px 8px rgba(0, 0, 0, .5), 15px 15px 8px rgba(0, 0, 0, .5);
+  }
 
+/* scroll up */
 .landingPageNavUp{
   display: none;
 }
-/* navbar end */
 
-/* header */
-.header{
-  margin: 0;
-  padding-left: 100px;
-  padding-top: 50px;
-  background-color: rgba(37, 116, 169, 1);
-  background-image: url(../sources/ocean_sea_foam.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  width:100%;
-  height: 600px;
+/* animations */
+
+@keyframes slideOutLeft{
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  51%{
+    transform: translateX(200px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
-  /* header title */
-  .header .title{
-    font-size: 45px;
-    padding-top: 30px;
-    color: white;
+@keyframes slideOutRight{
+  0% {
+    opacity: 1;
   }
-  .header p{
-    font-size: 20px;
-    margin-left: 60px;
-    color: white;
+  50% {
+    opacity: 0;
+    transform: translateX(200px);
   }
-/* header end */
-
-
-/* landingPage */
-.landingPage{
-  margin: 50px;
-  background-color: white;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  box-shadow: 5px 5px 8px black, 10px 10px 8px rgba(0, 0, 0, 0.5), 15px 15px 8px rgba(0,0,0,0.3);
+  51%{
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
-  .landingPage .content{
-    padding-top: 10px;
-    margin: 25px;
-  }
-
-    /* aboutSection */
-    .landingPage .aboutSection{
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: 40% 50% 10%;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "picture aboutMe ."
-    }
-    /* aboutSection end */
-      /* aboutSection grid */
-      .aboutSection .profilePicture{
-        grid-area: picture;
-        text-align: center;
-      }
-        .profilePicture img{
-          width: 300px;
-          height: 300px;
-        }
-      .aboutSection .aboutMe{
-        grid-area: aboutMe;
-      }
-        .aboutMe p{
-          font-size: 25px;
-        }
-      /* aboutSection grid end*/
-
-    .languages{
-      margin-left: -25px;
-      margin-right: -25px;
-      margin-top: 80px;
-      margin-bottom: 80px;
-      padding: 30px;
-      background-color: #b0b0b0;
-      color: white;
-
-      display: grid;
-      grid-template-columns: 20% 40% 40%;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "languageHeader languageHeader languageHeader"
-      ". list1 list2";
-    }
-      .languages h1{
-        text-align: center;
-        font-size: 35px;
-        grid-area: languageHeader;
-      }
-      .languages ul{
-        font-size: 25px;
-      }
-      .languages .list1{
-        padding-left: 20%;
-        grid-area: list1;
-      }
-      .languages .list2{
-        grid-area: list2;
-      }
-
-  /* contentHeader */
-  .landingPage .content .contentHeader{
-    text-align: center;
-  }
-    .contentHeader h1{
-      font-size: 30px;
-    }
-
-  /* currentProjects */
-  .landingPage .content .currentProjects{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "currentProjectsHeader currentProjectsHeader"
-    "project1 project2";
-  }
-    /* grid areas */
-    .currentProjects .currentProjectsHeader{
-      grid-area: currentProjectsHeader;
-    }
-    .currentProjects .project1{
-      grid-area: project1;
-    }
-    .currentProjects .project2{
-      grid-area: project2;
-    }
-    /* grid areas end */
-
-      .project1 p{
-
-      }
-      .project1 .frame{
-        text-align: center;
-      }
-        .project1 .frame a{
-
-        }
-        .project1 .frame img{
-          height:250px;
-          width:250px;
-        }
-      .project2 p{
-
-      }
-      .project2 .frame{
-        text-align: center;
-      }
-        .project2 .frame a{
-
-        }
-        .project2 .frame img{
-          height:250px;
-          width:250px;
-        }
-
-/* landingPage end */
-
-
-/* carousel */
-.container{
-  background-color: white;
-  padding-left: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100% !important;
-  margin: 0 !important;
-  max-width: none !important;
+.animateLeft{
+  animation-name: slideOutLeft;
+  animation-duration: 1s;
 }
-  .container .row{
-  }
-    .row .carousel{
-      margin-left: 155px;
-    }
-      .carousel ol{
-
-      }
-      .carousel .carousel-inner{
-
-      }
-        .carousel-inner .carousel-item{
-
-        }
-          .carousel-item .d-none{
-          }
-            .d-none .slide-box{
-              display: flex;
-              flex-wrap: wrap;
-            }
-              .slide-box .frame{
-                margin: 15px;
-              }
-                .slide-box .frame .bgslide{
-                  height: 250px;
-                  width: 250px;
-                  position: absolute;
-                }
-                .bgslide:hover{
-                  background-color: rgba(0,0,0,.7);
-                }
-                .slide-box .frame a{
-                  height: 250px;
-                  width: 250px;
-                  padding: 10px;
-                  margin: 10px;
-                  text-decoration: none;
-                  font-size: 25px;
-                  position: absolute;
-                  background-color: rgba(0,0,0,0);
-                  color:  rgba(0,0,0,0);
-                }
-                  .slide-box .frame a:hover{
-                    color:white
-                  }
-                .slide-box .frame p{
-                  font-size: 20px;
-                  margin: 0;
-                }
-                .slide-box .frame img{
-                  height: 250px;
-                  width: 250px;
-                }
-      #prev{
-        margin-left: -150px;
-        color:black;
-        border-radius: 0 150px 150px 0;
-      }
-      #prev:hover{
-        background-color: rgba(0,0,0,.5);
-      }
-        #prev-btn{
-          background-color: black;
-        }
-        #prev:hover #prev-btn{
-          background-color: rgba(0,0,0,0);
-        }
-      #next{
-        margin-right: -150px;
-        color:black;
-        border-radius: 150px 0 0 150px;
-      }
-      #next:hover{
-        background-color: rgba(0,0,0,.5);
-
-      }
-        #next-btn{
-          background-color: black;
-        }
-        #next:hover #next-btn{
-          background-color: rgba(0,0,0,0);
-        }
-/* end carousel */
+.animateRight{
+  animation-name: slideOutRight;
+  animation-duration: 1s;
+}

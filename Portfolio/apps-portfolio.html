@@ -1,164 +1,63 @@
 <head>
     <link rel="stylesheet" href="apps-portfolio.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <title>Apps Page</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-      $(function(){
-        $('#nav').load('nav.html');
-      });
+    <title>Apps Page - Travis Baker Web Development and Managment </title>
 
-      $(function(){
-        $('#footer').load('footer.html');
-      });
-
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 300) {
-          $(".appsPageNav").addClass("appsPageNavDown");
-        }else{
-          $(".appsPageNav").removeClass("appsPageNavDown");
-        }
-      });
+    <!-- navbar -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
+    <script
+      src="JS/navScroll.js">
+    </script>
+
 </head>
 
-<div id="nav" class = "appsPageNav">
-</div>
+<body>
+  <iframe class="appsPageNav" id="nav" src="nav.html"></iframe>
 
-<div class="header">
-  <h1>Projects</h1>
-  <p>Check out some of my Apps and projects</p>
-</div>
-
-<div class = "instruction">
-  Hover to read more...
-</div>
-
-<div class="content">
-
-  <div class="frame" id="firstframe">
-    <div class="bgslide">
-      <a href="../from_class/pig-latin/piglatin.html" target="_blank">
-        <p id = "slideinfo">
-          Pig Latin Translater:  Translate word or phrase into pig latin. CSS and javascript
-        </p>
-      </a>
-    </div>
-    <img id="firstframe" src="https://travi5jab.github.io/sources/pig.PNG" alt="First slide" class = "img">
+  <div class="header">
+    <h1>Projects, Apps and Webpages</h1>
   </div>
 
-  <div class="frame">
-    <div class="bgslide">
-      <a href="../from_class/high_low_game/high_low.html" target="_blank">
-        <p id = "slideinfo">
-          High Low Game:  Guess a number between 1-100 in 7 guesses or less.  CSS and javascript
-        </p>
-      </a>
+  <div class="row">
+    <div class="gameFrame">
+      <iframe src="apps/cloudCulture.html"></iframe>
     </div>
-    <img src="https://travi5jab.github.io/sources/highlow.PNG" alt="First slide" class = "img">
+    <div class="gameFrame">
+      <iframe src="apps/colissionTech.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/diceRoll.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/eightBall.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/highLow.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/joelsClinic.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/kingspireMedia.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/pluralizer.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/pigLatin.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/skillTree.html"></iframe>
+    </div>
+    <div class="gameFrame">
+      <iframe src="apps/yourPayrollMan.html"></iframe>
+    </div>
+
+
+
   </div>
 
-  <div class="frame">
-    <div class="bgslide">
-      <a href="../from_class/plural/pluralAnimal.html" target="_blank">
-        <p id = "slideinfo">
-          Pluralizer: plural or singular version of animals. Uses javascript for logic and html to display
-        </p>
-      </a>
-    </div>
-    <img src="https://travi5jab.github.io/sources/pluralizer.PNG" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="../from_class/8ball/8ball.html" target="_blank">
-        <p id = "slideinfo">
-          8 Ball: Ask A question and shake the ball.  Uses javascript for logic and html to display
-        </p>
-      </a>
-    </div>
-    <img src="http://travi5jab.github.io/sources/eightball.PNG" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="https://serene-caverns-71942.herokuapp.com/">
-        <p id = "slideinfo">
-          Dice Roll: roll a dice and log the outcome. Uses react app.
-        </p>
-      </a>
-    </div>
-    <img src="http://travi5jab.github.io/sources/dice.PNG" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="https://shrouded-sea-28469.herokuapp.com/">
-        <p id = "slideinfo">
-          Cloud Cultue: Social platform for Developers to connect
-        </p>
-      </a>
-    </div>
-    <img src="../sources/cloud.jpg" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="https://secure-plains-82081.herokuapp.com/">
-        <p id = "slideinfo">
-          Skill Tree: Social platform to connect Developers and Mentors
-        </p>
-      </a>
-    </div>
-    <img src="../sources/Zeallogo.png" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="http://kingspiremarketing.com/">
-        <p id = "slideinfo">
-          KingSpire Media: A digital marketing and managment website
-        </p>
-      </a>
-    </div>
-    <img src="../sources/kingspiremedia.png" alt="First slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="https://joelsclinic.com/">
-        <p id = "slideinfo">
-          Joels Clinic: A message theropist website. Set up an appointment and pay online.
-        </p>
-      </a>
-    </div>
-    <img src="../sources/joelsclinic.png" alt="Second slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="https://collisiontech-inc.com/">
-        <p id = "slideinfo">
-          Collision Tech: A web for a local collision repair business
-        </p>
-      </a>
-    </div>
-    <img src="../sources/collisiontech.png" alt="Second slide" class = "img">
-  </div>
-
-  <div class="frame">
-    <div class="bgslide">
-      <a href="http://yourpayrollman.com/">
-        <p id = "slideinfo">
-          Your PayRoll Man: a webpage for workers comp and HR issues to be resolved. Connections to ADP
-        </p>
-      </a>
-    </div>
-    <img src="../sources/yourpayrollman.png" alt="Second slide" class = "img">
-  </div>
-
-</div>
-
-<div class="footer" id = "footer">
-</div>
+  <!-- render footer.html -->
+  <iframe class="landingPageFooter" id="footer" src="footer.html"></iframe>
+</body>

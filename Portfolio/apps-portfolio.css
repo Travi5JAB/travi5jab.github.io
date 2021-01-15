@@ -1,102 +1,42 @@
-body{
+body, html{
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #c9c9c9;
 }
-/* navbar */
-.appsPageNavDown{
-  position: sticky;
-  top:0;
-  background-color: rgba(37, 116, 169, .5) !important;
-  background-image: none;
-  z-index: 999;
-  padding-bottom: 25px;
+iframe{
+  width: 100%;
+  height: auto;
+  border: none;
 }
+
+/* nav */
 .appsPageNav{
   background-color: rgba(37, 116, 169, 1);
-  background-image: url('../sources/ocean_sea_foam.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
-.appsPageNavDown:hover{
-  background-color: rgba(37, 116, 169, 1) !important;
-  box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
-}
-/* end navbar */
-
-/* header */
 .header{
-  margin: 0;
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-bottom: 20px;
   background-color: rgba(37, 116, 169, 1);
-  background-image: url(../sources/ocean_sea_foam.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  width:100%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3), 10px 10px 8px rgba(0, 0, 0, 0.3), 15px 15px 8px rgba(0, 0, 0, 0.3);
 }
   .header h1{
-    font-size: 45px;
-    padding-top: 30px;
-    color: white;
+    margin: 0;
+    padding: 25px;
   }
   .header p{
-    font-size: 20px;
-    margin-left: 60px;
-    color: white;
+    margin-left: 50px;
+    padding: 25px;
   }
-  .instruction{
-    margin: 20px;
-    color: white;
-  }
-/* end header */
-
-/* content */
-.content{
-  padding-top: 10px;
-  margin: 25px;
+.row{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
-  .content .frame{
-    height: 250px;
-    width: 250px;
+  .row .gameFrame{
     margin: 10px;
+    height: 450px;
+    width: 450px;
   }
-    .frame .bgslide{
-      height: 250px;
-      width: 250px;
-      position: absolute;
+    .row .gameFrame iframe{
+      border-radius: 75px;
+      height: 420px;
+      box-shadow: 5px 5px 8px grey, 10px 10px 8px grey, 15px 15px 8px grey;
     }
-      .bgslide:hover{
-        background-color: rgba(0,0,0,.7);
-      }
-    .frame a{
-      height: 250px;
-      width: 250px;
-      padding: 10px;
-      margin: 10px;
-      text-decoration: none;
-      font-size: 25px;
-      position: absolute;
-      background-color: rgba(0,0,0,0);
-      color:  rgba(0,0,0,0);
-    }
-      .frame a:hover{
-        /* background-color: rgba(0,0,0,.4); */
-        color: white;
-      }
-    .frame img{
-      height: 250px;
-      width: 250px;
-    }
-/* end content */
-
-/* footer */
-#footer{
-
-}
-/* end footer */

@@ -1,8 +1,8 @@
-body{
+html, body{
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-
 /* nav area */
 .navbar{
   height: 80px;
@@ -10,10 +10,6 @@ body{
   padding:20px;
   color:white;
   z-index: 99;
-  /* background-image: url('../sources/ocean_sea_foam.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; */
 }
 .navDown:hover{
   background-color: rgba(37, 116, 169, 1) !important;
@@ -21,6 +17,7 @@ body{
 }
 .navDown{
   position: sticky;
+  position: -webkit-sticky;
   top:0;
   background-color: rgba(37, 116, 169, .5) !important;
   background-image: none;
@@ -30,13 +27,13 @@ body{
   }
 
   .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     margin-left: 25px;
   }
   .navbar a:hover{
-    color: black;
+    color: #333333;
     text-decoration: underline;
   }
 /* nav end */

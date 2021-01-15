@@ -1,0 +1,47 @@
+/* about section */
+.aboutSection{
+  display: flex;
+}
+  .aboutMe{
+    margin: 25px;
+  }
+    .aboutMe h1{
+      font-size: 40px;
+      color: white;
+    }
+    .aboutMe p{
+      margin: 25px;
+      font-size: 20px;
+    }
+    .aboutMe .languageHeader{
+      margin-top: 40px;
+    }
+    .aboutMe .languages{
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas:
+      "l1 l2 l3";
+
+    }
+      .aboutMe .languages #list{
+        margin: 25px;
+        font-size: 25px;
+      }
+      .languages .list1{
+        grid-area: l1;
+      }
+      .languages .list2{
+        grid-area: l2;
+      }
+      .languages .list3{
+        grid-area: l3;
+      }
+  .profilePicture{
+    margin: 25px;
+  }
+    .profilePicture img{
+      border-radius: 50%;
+      height: 250px;
+      width: 250px;
+    }

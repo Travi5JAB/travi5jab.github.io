@@ -1,0 +1,33 @@
+.frame{
+  height: 400px;
+  width: 450px;
+  text-align: center;
+}
+  .bgslide{
+    height: 400px;
+    width: 450px;
+    position: absolute;
+  }
+  .bgslide:hover{
+    background-color: rgba(0,0,0,.7);
+  }
+    .bgslide a{
+      height: 450px;
+      width: 450px;
+      padding: 50px;
+      text-decoration: none;
+      font-size: 25px;
+      background-color: rgba(0,0,0,0);
+      color:  rgba(0,0,0,0);
+    }
+    .bgslide:hover a{
+      color:white
+    }
+      .bgslide a #slideinfo{
+        font-size: 20px;
+        padding: 25px;
+      }
+  .frame img{
+    height: 400px;
+    width: 450px;
+  }
